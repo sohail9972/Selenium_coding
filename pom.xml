@@ -17,9 +17,16 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.bonigarcia</groupId>
+            <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>2db107d8b1</version>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.7.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
