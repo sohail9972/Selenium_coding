@@ -1,3 +1,4 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,8 +8,11 @@ import java.util.List;
 
 public class Selenium9Genreic {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Sohail\\Seleniumfolder\\chromedrivernew\\chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver","C:\\Users\\Sohail\\Seleniumfolder\\chromedrivernew\\chromedriver.exe");
+//        WebDriver driver=new ChromeDriver();
+        WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
+        driver.get("https://www.globalsqa.com/demo-site/select-dropdown-menu/");
         driver.get("https://www.hdfcbank.com/");
 
 
