@@ -1,10 +1,12 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SeleniumStaticHashTables {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Sohail\\Seleniumfolder\\chromedrivernew\\chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver","C:\\Users\\Sohail\\Seleniumfolder\\chromedrivernew\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.get("https://practice.expandtesting.com/tables");
         driver.manage().window().maximize();
